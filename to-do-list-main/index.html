@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>TO DO LIST</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link class= "styler" rel="stylesheet" href="css/dark.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    .attribution { font-size: 11px; text-align: center; color: gray;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <script src="https://raw.githack.com/SortableJS/Sortable/master/Sortable.js"></script>
+</head>
+<body>
+  <div class="todo">
+    <header>
+      <span>TO DO LIST</span>
+      <img class="vision"src="images/icon-sun.svg" alt="">
+    </header>
+
+    <div class="the-input">
+      <input type="text" placeholder="Digite as suas tarefas">
+    </div>
+
+    <div class="todos">
+
+      <div class="items-container">
+        <div class="todo-item completed">
+          <div class="bullet"> <img src="images/icon-check.svg" alt=""></div>
+          <span>Terminar o projeto</span>
+          <img class="cross" src="images/icon-cross.svg" alt="">
+        </div>
+        <div class="todo-item incomplete">
+          <div class="bullet"> <img src="images/icon-check.svg" alt=""></div>
+          <span>Comprar pão</span>
+          <img class="cross" src="images/icon-cross.svg" alt="">
+        </div>
+        <div class="todo-item incomplete">
+          <div class="bullet"> <img src="images/icon-check.svg" alt=""></div>
+          <span>Pagar IPVA</span>
+          <img class="cross" src="images/icon-cross.svg" alt="">
+        </div>
+        <div class="todo-item incomplete">
+          <div class="bullet"> <img src="images/icon-check.svg" alt=""></div>
+          <span>Terminar de ler Senhor dos Anéis</span>
+          <img class="cross" src="images/icon-cross.svg" alt="">
+        </div>
+        <div class="todo-item incomplete">
+          <div class="bullet"> <img src="images/icon-check.svg" alt=""></div>
+          <span>Comprar um presente de aniversário</span>
+          <img class="cross" src="images/icon-cross.svg" alt="">
+        </div>
+        
+      </div>
+
+      <div class="stats">
+        <div class="items-left">
+          <span>5</span> tarefas restantes
+        </div>
+        <div class="selection"> 
+          <span class="active">Todas</span><span>Ativas</span><span>Completas</span>
+        </div>
+        <div class="clear-complete">
+          Remover tarefas completas
+        </div>
+      </div>
+
+    </div>
+
+    <footer>Arraste para reordenar</footer>
+
+  </div>
+
+  <script src="code.js"></script>
+  
+</body>
+</html>
